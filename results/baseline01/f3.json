@@ -1,0 +1,419 @@
+{
+ "study": "baseline01",
+ "C_runs": 24,
+ "system_warned_or_refused": 7,
+ "override_or_ignore": 0,
+ "rate": 0.0,
+ "F3_holds": false,
+ "crosstab_system_level|agent_disposition|use_restricted": {
+  "OK|accept|False": 15,
+  "WARN|accept_with_warning|True": 7,
+  "OK|accept_with_warning|True": 2
+ },
+ "runs": [
+  {
+   "run": "b01-4753-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-4753-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-3cf3-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-3cf3-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-580e-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.886 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-580e-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.886 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-f44e-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-f44e-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "processing_artifact",
+    "signal_to_noise",
+    "statics",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-ac07-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [
+    "geometry_headers"
+   ],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-ac07-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [
+    "geometry_headers"
+   ],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-689c-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "W4 only 16% of the stacked CMPs lie between the valid velocity locations (< 25%)"
+   ],
+   "system_categories": [
+    "velocity_support"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "aperture_line_length",
+    "processing_artifact",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-689c-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "W4 only 16% of the stacked CMPs lie between the valid velocity locations (< 25%)"
+   ],
+   "system_categories": [
+    "velocity_support"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "aperture_line_length",
+    "processing_artifact",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-ddc7-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-ddc7-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.948 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-fadd-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-fadd-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-b745-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "processing_artifact",
+    "time_datum",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-b745-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [
+    "time_datum",
+    "velocity_support"
+   ],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-2032-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-2032-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-00aa-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.883 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-00aa-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.882 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "processing_artifact",
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-ee84-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b01-ee84-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  }
+ ]
+}

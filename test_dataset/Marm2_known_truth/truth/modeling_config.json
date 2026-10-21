@@ -1,0 +1,48 @@
+{
+  "source_file": "marmousi2_vp_10m.npy",
+  "input_shape": [
+    351,
+    1701
+  ],
+  "input_units": "km/s inferred from values",
+  "crop_global_x_m": [
+    4000,
+    12000
+  ],
+  "crop_shape": [
+    351,
+    801
+  ],
+  "dx_m": 10.0,
+  "dz_m": 10.0,
+  "physics": "2D constant-density acoustic",
+  "spatial_order": 8,
+  "time_order": 2,
+  "absorbing_padding_cells": 50,
+  "modeling_dt_s": 0.001,
+  "output_dt_s": 0.002,
+  "record_length_s": 5.0,
+  "source": "Ricker",
+  "f0_hz": 10.0,
+  "pilot_source_global_x_m": 9000,
+  "source_depth_m": 20,
+  "receiver_depth_m": 10,
+  "nrec": 96,
+  "receiver_interval_m": 20,
+  "near_offset_m": 200,
+  "far_offset_m": 2100,
+  "top_boundary": "absorbing extension (no free-surface)",
+  "sides_bottom": "sponge absorbing",
+  "full_shots": 126,
+  "shot_global_x_m": [
+    6500,
+    11500,
+    40
+  ],
+  "n_traces": 12096,
+  "output_ns": 2501,
+  "output_dt_us": 2000,
+  "segy_sample_format": 5,
+  "segy_endian": "big",
+  "segy_file": "marm2_known_truth_v1.sgy"
+}

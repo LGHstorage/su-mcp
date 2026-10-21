@@ -1,0 +1,157 @@
+{
+ "good_threshold": 0.56,
+ "rows": {
+  "v024-h9-st15": {
+   "section": "D",
+   "ladder": "marm2_ladder_heldout9",
+   "level": "statics_15ms",
+   "reference_quality": 0.601,
+   "usable": true,
+   "stack1": {
+    "best_lag": 0.619,
+    "zero_lag": 0.551,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.639,
+    "zero_lag": 0.585,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v024-h9-bn100": {
+   "section": "D",
+   "ladder": "marm2_ladder_heldout9",
+   "level": "bandnoise_1p00x",
+   "reference_quality": 0.572,
+   "usable": true,
+   "stack1": {
+    "best_lag": 0.596,
+    "zero_lag": 0.498,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.596,
+    "zero_lag": 0.498,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v024-h9-wn100": {
+   "section": "D",
+   "ladder": "marm2_ladder_heldout9",
+   "level": "whitenoise_1p0x",
+   "reference_quality": 0.565,
+   "usable": true,
+   "stack1": {
+    "best_lag": 0.596,
+    "zero_lag": 0.506,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.596,
+    "zero_lag": 0.506,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v024-h9-dl080": {
+   "section": "D",
+   "ladder": "marm2_ladder_heldout9",
+   "level": "delay_080ms",
+   "reference_quality": 0.623,
+   "usable": true,
+   "stack1": {
+    "best_lag": 0.641,
+    "zero_lag": 0.559,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.641,
+    "zero_lag": 0.559,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v024-h9-st15bn": {
+   "section": "D",
+   "ladder": "marm2_ladder_heldout9",
+   "level": "statics15_bandnoise_0p80x",
+   "reference_quality": 0.543,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.582,
+    "zero_lag": 0.51,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.61,
+    "zero_lag": 0.521,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  }
+ },
+ "clean": {
+  "v024-v2": {
+   "stack1": {
+    "best_lag": 0.64,
+    "zero_lag": 0.534,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.64,
+    "zero_lag": 0.534,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   }
+  }
+ }
+}

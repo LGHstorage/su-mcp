@@ -1,0 +1,6 @@
+# MCP Python SDK v2 (Python 3.10+)
+mcp[cli]>=2.0
+
+# QC figures and header parsing
+numpy>=1.24
+matplotlib>=3.7

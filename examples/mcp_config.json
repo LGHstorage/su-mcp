@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "seismic-unix": {
+      "command": "/home/USER/su-mcp/.venv/bin/python",
+      "args": ["/home/USER/su-mcp/server.py"],
+      "env": {
+        "CWPROOT": "/home/USER/cwp",
+        "SU_MCP_ROOT": "/home/USER/su-mcp"
+      }
+    }
+  }
+}

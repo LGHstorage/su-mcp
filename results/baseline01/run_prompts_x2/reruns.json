@@ -1,0 +1,58 @@
+[
+ {
+  "seq": 1,
+  "run": "b01-4753-b-r1-x2",
+  "replaces": "b01-4753-b-r1",
+  "prompt": "results/baseline01/run_prompts_x2/b01-4753-b-r1-x2.txt",
+  "sha256": "3972e98d1b3f48065a2a3b7f9044beee8d3ac33fb4e4ea7747cc4539ded2edec",
+  "source_sha256": "4a3ac54dd2ae8aec54615915f45d95f24f8d6af8b70ee5803471105e95150fa2",
+  "derivation": "frozen task text with the run name replaced by <run>-x2 (all occurrences)",
+  "addendum": 1
+ },
+ {
+  "seq": 9,
+  "run": "b01-3cf3-b-r1-x2",
+  "replaces": "b01-3cf3-b-r1",
+  "prompt": "results/baseline01/run_prompts_x2/b01-3cf3-b-r1-x2.txt",
+  "sha256": "6445a0a85512ed295566c72e3dc87867391a7cf59b4a90478470d92f2aaff36e",
+  "source_sha256": "388bc15ffc59d034fd58bef5efaedfb0c32171f0b96e19074f6dca31da95be66",
+  "derivation": "frozen task text with the run name replaced by <run>-x2 (all occurrences)",
+  "addendum": 1
+ },
+ {
+  "seq": 13,
+  "run": "b01-580e-b-r1-x2",
+  "replaces": "b01-580e-b-r1",
+  "prompt": "results/baseline01/run_prompts_x2/b01-580e-b-r1-x2.txt",
+  "sha256": "6f4e032a8142dbef85896472b76c3a9083deed2306c3b8414c4de97a8ec21099",
+  "source_sha256": "131bc13912aaa6d1fa5bc48532340a83534f41f29f750dcab3ae9efab04701b7",
+  "derivation": "frozen task text with the run name replaced by <run>-x2 (all occurrences)",
+  "addendum": 2,
+  "reason": "Addendum 2 rule 2 (pass counter)",
+  "case": "case_580e"
+ },
+ {
+  "seq": 31,
+  "run": "b01-689c-b-r1-x2",
+  "replaces": "b01-689c-b-r1",
+  "prompt": "results/baseline01/run_prompts_x2/b01-689c-b-r1-x2.txt",
+  "sha256": "cb77c9448088f2701f9e21c7c43eaf583b86592f06c7d1ace9463d735a307d21",
+  "source_sha256": "74df157c3a216890d7eacd383e360e2f4cb8e6082c62c1b2499a6c69720730e3",
+  "derivation": "frozen task text with the run name replaced by <run>-x2 (all occurrences)",
+  "addendum": 2,
+  "reason": "Addendum 2 rule 1 (size exposure)",
+  "case": "case_689c"
+ },
+ {
+  "seq": 36,
+  "run": "b01-689c-b-r2-x2",
+  "replaces": "b01-689c-b-r2",
+  "prompt": "results/baseline01/run_prompts_x2/b01-689c-b-r2-x2.txt",
+  "sha256": "333d9de5394337f5504972f592a7a1a44f122792c520aa644417cd525cbee8c5",
+  "source_sha256": "3c1de8377ef9cfdef4507ee3b68d7ac1dabb878ebfcc2bb65adadf6939e45c96",
+  "derivation": "frozen task text with the run name replaced by <run>-x2 (all occurrences)",
+  "addendum": 2,
+  "reason": "Addendum 2 rule 1 (size exposure)",
+  "case": "case_689c"
+ }
+]

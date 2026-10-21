@@ -1,0 +1,81 @@
+{
+ "v031-v2": {
+  "stack0": 0.64,
+  "stack1": 0.696,
+  "final": 0.696,
+  "phase_shift": [
+   0.562,
+   0.499
+  ],
+  "phase_shift_smooth": [
+   0.628,
+   0.599
+  ],
+  "class": "A"
+ },
+ "v031-h14-sb": {
+  "stack0": 0.615,
+  "stack1": 0.67,
+  "final": 0.67,
+  "phase_shift": [
+   0.547,
+   0.452
+  ],
+  "phase_shift_smooth": [
+   0.627,
+   0.578
+  ],
+  "class": "A"
+ },
+ "v031-h14-wn": {
+  "stack0": 0.632,
+  "stack1": 0.674,
+  "final": 0.674,
+  "phase_shift": [
+   0.52,
+   0.441
+  ],
+  "phase_shift_smooth": [
+   0.573,
+   0.559
+  ],
+  "class": "A~"
+ },
+ "v031-h14-bn": {
+  "stack0": 0.551,
+  "stack1": 0.638,
+  "final": 0.638,
+  "phase_shift": [
+   0.578,
+   0.451
+  ],
+  "phase_shift_smooth": [
+   0.622,
+   0.568
+  ],
+  "class": "A"
+ },
+ "v031-h14-dl": {
+  "stack0": 0.637,
+  "stack1": 0.635,
+  "final": 0.635,
+  "phase_shift": [
+   0.506,
+   0.413
+  ],
+  "phase_shift_smooth": [
+   0.542,
+   0.539
+  ],
+  "class": "A"
+ },
+ "v031-v2n": {
+  "stack1": 0.64,
+  "final": 0.64,
+  "phase_shift": [
+   0.536,
+   0.466
+  ],
+  "class": "A"
+ }
+}

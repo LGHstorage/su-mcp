@@ -1,0 +1,59 @@
+{
+ "good_threshold": 0.56,
+ "rows": {
+  "v019-h4-bn030": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "bandnoise_0p30x",
+   "reference_quality": 0.62,
+   "usable": true,
+   "released_quality": 0.609,
+   "zero_lag": 0.476,
+   "good": true
+  },
+  "v019-h4-bn160": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "bandnoise_1p60x",
+   "reference_quality": 0.519,
+   "usable": false,
+   "released_quality": 0.505,
+   "zero_lag": 0.387,
+   "good": false
+  },
+  "v019-h4-bn220": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "bandnoise_2p20x",
+   "reference_quality": 0.479,
+   "usable": false,
+   "released_quality": 0.471,
+   "zero_lag": 0.37,
+   "good": false
+  },
+  "v019-h4-bn280": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "bandnoise_2p80x",
+   "reference_quality": 0.435,
+   "usable": false,
+   "released_quality": 0.425,
+   "zero_lag": 0.307,
+   "good": false
+  },
+  "v019-h4-st16": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "statics_16ms",
+   "reference_quality": 0.597,
+   "usable": true
+  },
+  "v019-h4-st22": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "statics_22ms",
+   "reference_quality": 0.557,
+   "usable": false
+  },
+  "v019-h4-dl105": {
+   "ladder": "marm2_ladder_heldout4",
+   "level": "delay_105",
+   "reference_quality": 0.596,
+   "usable": true
+  }
+ }
+}

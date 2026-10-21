@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+
+# data, intermediate files and run state are not tracked
+raw/
+work/
+qc/
+logs/
+state/
+test_dataset/*
+!test_dataset/Marm2_known_truth/
+results/*.su
+results/*.json
+results/*/stacks/

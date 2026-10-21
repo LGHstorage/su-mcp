@@ -1,0 +1,338 @@
+{
+ "good_threshold": 0.56,
+ "rows": {
+  "v021-h2-st18": {
+   "section": "B",
+   "level": "statics_18ms",
+   "reference": 0.602,
+   "usable": true,
+   "stack1": 0.583,
+   "stack1_grade": "A",
+   "final": 0.631,
+   "final_reliability": "OK",
+   "final_reasons": [],
+   "grade": "A",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 3,
+   "scope_cdp": null
+  },
+  "v021-h4-st16": {
+   "section": "B",
+   "level": "statics_16ms",
+   "reference": 0.597,
+   "usable": true,
+   "stack1": 0.584,
+   "stack1_grade": "A*",
+   "final": 0.605,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "A*",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 3,
+   "scope_cdp": null
+  },
+  "v021-l1-st20": {
+   "section": "B",
+   "level": "statics_20ms",
+   "reference": 0.584,
+   "usable": true,
+   "stack1": 0.543,
+   "stack1_grade": "Bn",
+   "final": 0.601,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "A*",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 2,
+   "scope_cdp": null
+  },
+  "v021-h5-st12": {
+   "section": "B",
+   "level": "statics_12ms",
+   "reference": 0.602,
+   "usable": true,
+   "stack1": 0.602,
+   "stack1_grade": "A",
+   "final": 0.633,
+   "final_reliability": "OK",
+   "final_reasons": [],
+   "grade": "A",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 2,
+   "scope_cdp": null
+  },
+  "v021-h5-st24": {
+   "section": "B",
+   "level": "statics_24ms",
+   "reference": 0.522,
+   "usable": false,
+   "stack1": 0.424,
+   "stack1_grade": "Bn",
+   "final": 0.561,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "A*",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 4,
+   "scope_cdp": null
+  },
+  "v021-h5-st16bn": {
+   "section": "B",
+   "level": "statics16_bandnoise_1p00x",
+   "reference": 0.502,
+   "usable": false,
+   "stack1": 0.53,
+   "stack1_grade": "Bn",
+   "final": 0.548,
+   "final_reliability": "OK",
+   "final_reasons": [],
+   "grade": "C",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 2,
+   "scope_cdp": null
+  },
+  "v021-h3-wn100": {
+   "section": "C",
+   "level": "whitenoise_1p0x",
+   "reference": 0.563,
+   "usable": true,
+   "stack1": 0.549,
+   "stack1_grade": "Bn",
+   "final": 0.549,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-l1-nz100": {
+   "section": "C",
+   "level": "noise_1p0x",
+   "reference": 0.567,
+   "usable": true,
+   "stack1": 0.549,
+   "stack1_grade": "Bn",
+   "final": 0.549,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h5-wn150": {
+   "section": "C",
+   "level": "whitenoise_1p5x",
+   "reference": 0.517,
+   "usable": false,
+   "stack1": 0.501,
+   "stack1_grade": "Bn",
+   "final": 0.501,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h6-st10": {
+   "section": "D",
+   "level": "statics_10ms",
+   "reference": 0.616,
+   "usable": true,
+   "stack1": 0.594,
+   "stack1_grade": "A*",
+   "final": 0.613,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "A*",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 2,
+   "scope_cdp": null
+  },
+  "v021-h6-st18": {
+   "section": "D",
+   "level": "statics_18ms",
+   "reference": 0.586,
+   "usable": true,
+   "stack1": 0.586,
+   "stack1_grade": "A*",
+   "final": 0.617,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "A*",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 2,
+   "scope_cdp": null
+  },
+  "v021-h6-st28": {
+   "section": "D",
+   "level": "statics_28ms",
+   "reference": 0.499,
+   "usable": false,
+   "stack1": 0.469,
+   "stack1_grade": "Bn",
+   "final": 0.55,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 3,
+   "scope_cdp": [
+    753,
+    1048
+   ]
+  },
+  "v021-h6-wn070": {
+   "section": "D",
+   "level": "whitenoise_0p7x",
+   "reference": 0.594,
+   "usable": true,
+   "stack1": 0.593,
+   "stack1_grade": "A*",
+   "final": 0.593,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "A*",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h6-wn120": {
+   "section": "D",
+   "level": "whitenoise_1p2x",
+   "reference": 0.549,
+   "usable": false,
+   "stack1": 0.532,
+   "stack1_grade": "Bn",
+   "final": 0.532,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h6-wn170": {
+   "section": "D",
+   "level": "whitenoise_1p7x",
+   "reference": 0.504,
+   "usable": false,
+   "stack1": 0.489,
+   "stack1_grade": "Bn",
+   "final": 0.489,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "N1 NOISE_LIMITED",
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h6-bn100": {
+   "section": "D",
+   "level": "bandnoise_1p00x",
+   "reference": 0.567,
+   "usable": true,
+   "stack1": 0.56,
+   "stack1_grade": "A",
+   "final": 0.56,
+   "final_reliability": "OK",
+   "final_reasons": [],
+   "grade": "A",
+   "rs2_accepted": false,
+   "datum_shift": false,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h6-dl060": {
+   "section": "D",
+   "level": "delay_060ms",
+   "reference": 0.623,
+   "usable": true,
+   "stack1": 0.625,
+   "stack1_grade": "A",
+   "final": 0.625,
+   "final_reliability": "OK",
+   "final_reasons": [],
+   "grade": "A",
+   "rs2_accepted": false,
+   "datum_shift": true,
+   "velocity_analyses": 1,
+   "scope_cdp": null
+  },
+  "v021-h6-st14wn": {
+   "section": "D",
+   "level": "statics14_whitenoise_0p80x",
+   "reference": 0.546,
+   "usable": false,
+   "stack1": 0.533,
+   "stack1_grade": "Bn",
+   "final": 0.558,
+   "final_reliability": "WARN",
+   "final_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "grade": "Bn",
+   "rs2_accepted": true,
+   "datum_shift": false,
+   "velocity_analyses": 2,
+   "scope_cdp": null
+  }
+ },
+ "counts": {
+  "B": {
+   "A": 2,
+   "A*": 3,
+   "C": 1
+  },
+  "C": {
+   "Bn": 3
+  },
+  "D": {
+   "A*": 3,
+   "Bn": 4,
+   "A": 2
+  }
+ }
+}

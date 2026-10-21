@@ -1,0 +1,25 @@
+{
+ "good_threshold": 0.56,
+ "rows": {
+  "v019-v2": {
+   "released_quality": 0.622,
+   "zero_lag": 0.497,
+   "good": true
+  },
+  "v019-c1": {
+   "released_quality": 0.614,
+   "zero_lag": 0.478,
+   "good": true
+  },
+  "v019-c2": {
+   "released_quality": 0.581,
+   "zero_lag": 0.436,
+   "good": true
+  },
+  "v019-c3": {
+   "released_quality": 0.624,
+   "zero_lag": 0.497,
+   "good": true
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "good_threshold": 0.56,
+ "rows": {
+  "v019-ho-st15": {
+   "ladder": "marm2_ladder_heldout",
+   "level": "statics_15ms",
+   "reference_quality": 0.602,
+   "usable": true,
+   "released_quality": 0.59,
+   "zero_lag": 0.504,
+   "good": true
+  },
+  "v019-ho-bn300": {
+   "ladder": "marm2_ladder_heldout",
+   "level": "bandnoise_3p00x",
+   "reference_quality": 0.426,
+   "usable": false,
+   "released_quality": 0.428,
+   "zero_lag": 0.344,
+   "good": false
+  },
+  "v019-ho-dl110": {
+   "ladder": "marm2_ladder_heldout",
+   "level": "delay_110",
+   "reference_quality": 0.589,
+   "usable": true
+  },
+  "v019-h2-bn250": {
+   "ladder": "marm2_ladder_heldout2",
+   "level": "bandnoise_2p50x",
+   "reference_quality": 0.472,
+   "usable": false,
+   "released_quality": 0.48,
+   "zero_lag": 0.374,
+   "good": false
+  },
+  "v019-h2-st18": {
+   "ladder": "marm2_ladder_heldout2",
+   "level": "statics_18ms",
+   "reference_quality": 0.602,
+   "usable": true,
+   "released_quality": 0.583,
+   "zero_lag": 0.463,
+   "good": true
+  },
+  "v019-h3-bn175": {
+   "ladder": "marm2_ladder_heldout3",
+   "level": "bandnoise_1p75x",
+   "reference_quality": 0.509,
+   "usable": false,
+   "released_quality": 0.513,
+   "zero_lag": 0.4,
+   "good": false
+  },
+  "v019-h3-bn225": {
+   "ladder": "marm2_ladder_heldout3",
+   "level": "bandnoise_2p25x",
+   "reference_quality": 0.474,
+   "usable": false,
+   "released_quality": 0.471,
+   "zero_lag": 0.369,
+   "good": false
+  }
+ }
+}

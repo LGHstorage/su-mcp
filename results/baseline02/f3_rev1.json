@@ -1,0 +1,350 @@
+{
+ "study": "baseline02",
+ "C_runs": 18,
+ "system_warned_or_refused": 8,
+ "override_or_ignore": 0,
+ "rate": 0.0,
+ "F3_holds": false,
+ "crosstab_system_level|agent_disposition|use_restricted": {
+  "WARN|accept_with_warning|True": 7,
+  "OK|accept|False": 9,
+  "OK|accept_with_warning|True": 1,
+  "none|abstain|True": 1
+ },
+ "runs": [
+  {
+   "run": "b02-9135-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.844 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-9135-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.848 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-035a-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.919 < 0.95",
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "processing_artifact",
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-035a-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.919 < 0.95",
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [
+    "feasibility not established before binning (INCONCLUSIVE)"
+   ],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "processing_artifact",
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-8383-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-8383-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-fd06-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "processing_artifact",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-fd06-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-9eb1-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-9eb1-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-34e7-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-34e7-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-7fc7-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.901 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-7fc7-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "N2 half-stack ceiling 0.901 < 0.95"
+   ],
+   "system_categories": [
+    "signal_to_noise"
+   ],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-0cdd-c-r1",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-0cdd-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "OK",
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": false,
+   "agent_disposition": "accept",
+   "agent_categories": [],
+   "agent_use_restricted": false,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-4133-c-r1",
+   "system_stack_status": null,
+   "system_level": null,
+   "system_reasons": [],
+   "system_categories": [],
+   "unmapped_reasons": [],
+   "system_refused": true,
+   "system_warned_or_refused": true,
+   "agent_disposition": "abstain",
+   "agent_categories": [
+    "signal_to_noise",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  },
+  {
+   "run": "b02-4133-c-r2",
+   "system_stack_status": "PASS",
+   "system_level": "WARN",
+   "system_reasons": [
+    "W4 only 22% of the stacked CMPs lie between the valid velocity locations (< 25%)"
+   ],
+   "system_categories": [
+    "velocity_support"
+   ],
+   "unmapped_reasons": [],
+   "system_refused": false,
+   "system_warned_or_refused": true,
+   "agent_disposition": "accept_with_warning",
+   "agent_categories": [
+    "aperture_line_length",
+    "processing_artifact",
+    "velocity_support"
+   ],
+   "agent_use_restricted": true,
+   "override": false,
+   "ignore": false
+  }
+ ]
+}

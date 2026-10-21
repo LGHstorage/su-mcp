@@ -1,0 +1,255 @@
+{
+ "good_threshold": 0.56,
+ "rows": {
+  "v023-h8-bn120": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "bandnoise_1p20x",
+   "reference_quality": 0.562,
+   "usable": true,
+   "stack1": {
+    "best_lag": 0.576,
+    "zero_lag": 0.48,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.576,
+    "zero_lag": 0.48,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v023-h8-bn140": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "bandnoise_1p40x",
+   "reference_quality": 0.543,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.56,
+    "zero_lag": 0.465,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.56,
+    "zero_lag": 0.465,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v023-h8-bn200": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "bandnoise_2p00x",
+   "reference_quality": 0.501,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.51,
+    "zero_lag": 0.419,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.51,
+    "zero_lag": 0.419,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": false
+  },
+  "v023-h8-wn130": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "whitenoise_1p3x",
+   "reference_quality": 0.539,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.569,
+    "zero_lag": 0.477,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.569,
+    "zero_lag": 0.477,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v023-h8-wn150": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "whitenoise_1p5x",
+   "reference_quality": 0.522,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.55,
+    "zero_lag": 0.465,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.55,
+    "zero_lag": 0.465,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": false
+  },
+  "v023-h8-st20bn": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "statics20_bandnoise_1p20x",
+   "reference_quality": 0.47,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.463,
+    "zero_lag": 0.397,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.573,
+    "zero_lag": 0.455,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v023-h8-st18wn": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "statics18_whitenoise_1p00x",
+   "reference_quality": 0.482,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.501,
+    "zero_lag": 0.449,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.588,
+    "zero_lag": 0.512,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  },
+  "v023-h8-dl120bn": {
+   "section": "C",
+   "ladder": "marm2_ladder_heldout8",
+   "level": "delay120_bandnoise_0p80x",
+   "reference_quality": 0.536,
+   "usable": false,
+   "stack1": {
+    "best_lag": 0.632,
+    "zero_lag": 0.528,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.632,
+    "zero_lag": 0.528,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "good": true
+  }
+ },
+ "clean": {
+  "v023-v2": {
+   "stack1": {
+    "best_lag": 0.64,
+    "zero_lag": 0.534,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.64,
+    "zero_lag": 0.534,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   }
+  },
+  "v023-v2c": {
+   "stack1": {
+    "best_lag": 0.622,
+    "zero_lag": 0.497,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   },
+   "final": {
+    "best_lag": 0.622,
+    "zero_lag": 0.497,
+    "traces": 596,
+    "cdp_range": [
+     545,
+     1140
+    ]
+   }
+  }
+ }
+}

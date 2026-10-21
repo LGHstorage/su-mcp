@@ -1,0 +1,240 @@
+{
+ "good_threshold": 0.56,
+ "counts": {
+  "B": {
+   "A": 6,
+   "C": 2,
+   "Bn": 1
+  },
+  "C": {
+   "A": 1
+  },
+  "D": {
+   "A": 5,
+   "Bn": 4,
+   "C": 1
+  }
+ },
+ "rows": {
+  "v020-ho-dl110": {
+   "section": "B",
+   "path": "T1",
+   "quality": 0.623,
+   "reference": 0.589,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-l1-dl124": {
+   "section": "B",
+   "path": "T1",
+   "quality": 0.625,
+   "reference": 0.572,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h4-dl105": {
+   "section": "B",
+   "path": "T1",
+   "quality": 0.625,
+   "reference": 0.596,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-ho-wn100": {
+   "section": "B",
+   "path": "G1",
+   "quality": 0.562,
+   "reference": 0.563,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h2-wn050": {
+   "section": "B",
+   "path": "G1",
+   "quality": 0.605,
+   "reference": 0.603,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h3-wn100": {
+   "section": "B",
+   "path": "G1",
+   "quality": 0.549,
+   "reference": 0.563,
+   "usable": true,
+   "w1": "OK",
+   "cell": "C",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h4-st16": {
+   "section": "B",
+   "path": "G1",
+   "quality": 0.584,
+   "reference": 0.597,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-l1-nz100": {
+   "section": "B",
+   "path": "G1",
+   "quality": 0.549,
+   "reference": 0.567,
+   "usable": true,
+   "w1": "OK",
+   "cell": "C",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-l1-st20": {
+   "section": "B",
+   "path": "G1",
+   "quality": 0.543,
+   "reference": 0.584,
+   "usable": true,
+   "w1": "WARN",
+   "cell": "Bn",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h2-st18": {
+   "section": "C",
+   "path": "refine",
+   "quality": 0.583,
+   "reference": 0.602,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-st12": {
+   "section": "D",
+   "path": "-",
+   "quality": 0.602,
+   "reference": 0.602,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-st24": {
+   "section": "D",
+   "path": "G1+refine+S1",
+   "quality": 0.424,
+   "reference": 0.522,
+   "usable": false,
+   "w1": "WARN",
+   "cell": "Bn",
+   "false_alarm": false,
+   "traces": 309
+  },
+  "v020-h5-dl045": {
+   "section": "D",
+   "path": "T1",
+   "quality": 0.625,
+   "reference": 0.627,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-dl080": {
+   "section": "D",
+   "path": "T1",
+   "quality": 0.625,
+   "reference": 0.623,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-dl140": {
+   "section": "D",
+   "path": "T1",
+   "quality": 0.623,
+   "reference": 0.566,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-bn060": {
+   "section": "D",
+   "path": "-",
+   "quality": 0.6,
+   "reference": 0.601,
+   "usable": true,
+   "w1": "OK",
+   "cell": "A",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-bn130": {
+   "section": "D",
+   "path": "-",
+   "quality": 0.527,
+   "reference": 0.545,
+   "usable": false,
+   "w1": "WARN",
+   "cell": "Bn",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-bn240": {
+   "section": "D",
+   "path": "refine",
+   "quality": 0.446,
+   "reference": 0.448,
+   "usable": false,
+   "w1": "WARN",
+   "cell": "Bn",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-wn150": {
+   "section": "D",
+   "path": "G1",
+   "quality": 0.501,
+   "reference": 0.517,
+   "usable": false,
+   "w1": "OK",
+   "cell": "C",
+   "false_alarm": false,
+   "traces": 596
+  },
+  "v020-h5-st16bn": {
+   "section": "D",
+   "path": "-",
+   "quality": 0.53,
+   "reference": 0.502,
+   "usable": false,
+   "w1": "WARN",
+   "cell": "Bn",
+   "false_alarm": false,
+   "traces": 596
+  }
+ }
+}
