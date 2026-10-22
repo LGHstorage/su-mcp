@@ -1,0 +1,44 @@
+{
+ "source": "test_dataset/ModelB/modelb_clean_2p6s.sgy",
+ "source_sha256": "9ebc193c6bfb4072319cab3843562b5393f4765673c41996a047a588595429c7",
+ "reflection_rms": 0.017637661235321657,
+ "criteria": "results/modelb/CRITERIA.md",
+ "seeds": [
+  151,
+  152,
+  153
+ ],
+ "levels": {
+  "delay_060ms": {
+   "delay_ms": 60,
+   "sha256": "bb6191d65fe8f7f8472cf9b611538fff08c578ae6e3c87650c6936361971befc"
+  },
+  "bandnoise_1p00x": {
+   "band_x": 1.0,
+   "sha256": "e69becf8ec44dd6d251ef78545aab10b8fa0c3a729f80caacf72b7e6ca661756"
+  },
+  "bandnoise_1p60x": {
+   "band_x": 1.6,
+   "sha256": "c9c77525d1ec5fe6e4612ba4d375adbbf862e86046290ec2f129ee77a406a392"
+  },
+  "bandnoise_2p00x": {
+   "band_x": 2.0,
+   "sha256": "0c532175c93da5fc9c87be720d3a5d950e8a9a3c5da2a773b65d15f8112e9dfa"
+  },
+  "whitenoise_1p0x": {
+   "white_x": 1.0,
+   "sha256": "9bf14a49c589925c2e9f03fae47eca84ec38ccb23a72990333da2d714e0f5996"
+  },
+  "statics_16ms": {
+   "statics_rms_ms": 16,
+   "realised_ms": 16.25,
+   "sha256": "0e33d3303d59247343a06aa2424dbde23a13140e9076acc59240fb9e3488f127"
+  },
+  "statics12_bandnoise_1p00x": {
+   "statics_rms_ms": 12,
+   "band_x": 1.0,
+   "realised_ms": 12.19,
+   "sha256": "6958cfff73a8506854c38a65314e2cdb34ff312ef55c8f731177be594b632efa"
+  }
+ }
+}

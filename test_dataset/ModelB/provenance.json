@@ -1,0 +1,21 @@
+{
+ "output": "test_dataset/ModelB/modelb_clean_2p6s.sgy",
+ "output_sha256": "9ebc193c6bfb4072319cab3843562b5393f4765673c41996a047a588595429c7",
+ "vp": "test_dataset/ModelB/truth/modelb_vp_f32.bin",
+ "vp_sha256": "073d46619c00d83a4605b59a853f73385f245bc2bb9bba397d31d711af39f6bd",
+ "model_script": "dev/modelb/make_model.py",
+ "modeler": "dev/marm2_oracle/acoustic_fd2d_v2.c",
+ "modeler_sha256": "b88deaa5d6e5760edd9b60eba1969ec1db11f565f148023646bb38fe994f350b",
+ "header_template": "test_dataset/Marm2_v2/marm2_known_truth_v2_2p6s.sgy",
+ "nb_cells": 200,
+ "sponge_S": 0.005,
+ "time_zero": "wavelet peak",
+ "record_s": 2.6,
+ "dt_s": 0.002,
+ "shots": 126,
+ "receivers_per_shot": 96,
+ "reference": "results/modelb/er_reference_modelb.npz",
+ "reference_sha256": "62db5c2acfba370f612153cd03703da4f25697cd160aa203e7b361f1278364f8",
+ "criteria": "results/modelb/CRITERIA.md",
+ "note": "identical bytes from the cloud and the local build of the modeler"
+}

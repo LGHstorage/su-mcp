@@ -1,0 +1,1720 @@
+{
+ "levels": {
+  "clean": {
+   "dataset": "modelb-clean",
+   "verdict": {
+    "released": true,
+    "reliability": "OK",
+    "quality_reasons": [],
+    "provenance_reasons": [],
+    "time_datum": "WITHIN_RESOLUTION",
+    "lag_ms": -2.0,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "d924ad6a5a18",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1500.0,
+          1500.0,
+          1500.0,
+          1500.0,
+          1528.6,
+          1564.3,
+          1600.0,
+          1635.7,
+          1671.4,
+          1709.8,
+          1756.3,
+          1795.7,
+          1841.6,
+          1900.0,
+          1945.9,
+          2006.5,
+          2077.6,
+          2139.1,
+          2218.2,
+          2250.0,
+          2350.0,
+          2350.0,
+          2350.0,
+          2350.0,
+          2350.0,
+          2350.0,
+          2350.0
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-clean/modelb-clean_cmp_sorted.su",
+      "output": "work/modelb-clean/modelb-clean_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9196,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.7,
+        2.0,
+        2.3
+       ],
+       "injected_hz": 9.48,
+       "period_source": "R1",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1500.0,
+        2350.0
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "4fc9f598c733",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 26,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-clean/modelb-clean_cmp_conditioned_p1.su",
+      "output": "work/modelb-clean/modelb-clean_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.9105,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.9081,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.9929,
+       "materiality_rms_s": 0.00771,
+       "static_rms_s": 0.00201,
+       "quarter_period_s": 0.0264,
+       "period_source": "R1",
+       "max_shift_samples": 26,
+       "solution": "results/modelb-clean_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "the statics are immaterial: rms 2.0 ms would cost the stack only 1% of its amplitude (threshold 10%, i.e. rms > 7.7 ms); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.738,
+   "reference_quality": 0.707,
+   "usable": true,
+   "class": "A"
+  },
+  "delay 60": {
+   "dataset": "modelb-dl060",
+   "verdict": {
+    "released": true,
+    "reliability": "OK",
+    "quality_reasons": [],
+    "provenance_reasons": [],
+    "time_datum": "WITHIN_RESOLUTION",
+    "lag_ms": 0.0,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "cecf60c9366e",
+      "operations": [
+       {
+        "op": "datum_shift"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "datum_shift",
+        "program": "in-process sample shift (R1 lag)",
+        "shift_samples": -29,
+        "shift_s": -0.058
+       }
+      ],
+      "input": "work/modelb-dl060/modelb-dl060_cmp_sorted.su",
+      "output": "work/modelb-dl060/modelb-dl060_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "R1 re-measured on the shifted data (v0.20 T1)",
+       "lag_before_s": 0.058,
+       "period_before_s": 0.1083,
+       "shift_applied_s": -0.058,
+       "shift_samples": -29,
+       "remeasured": {
+        "status": "PASS",
+        "algorithm_version": "timezero-0.1",
+        "intercept_s": 0.0,
+        "direct_velocity_m_s": 1499.5,
+        "dominant_hz": 9.48,
+        "tolerance_s": 0.1055,
+        "near_offset_traces": 48,
+        "near_offset_range_m": [
+         200.0,
+         1140.0
+        ],
+        "reason": "the flattened direct wave peaks +0 ms from the SEG-Y time zero, within one dominant period (105 ms at 9.5 Hz)"
+       },
+       "quarter_period_s": 0.0264,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "53cee69d972f",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1500.0,
+          1500.0,
+          1500.0,
+          1500.0,
+          1528.6,
+          1564.3,
+          1600.0,
+          1635.7,
+          1671.4,
+          1709.5,
+          1757.0,
+          1804.3,
+          1851.9,
+          1900.0,
+          1935.7,
+          1993.0,
+          2064.6,
+          2136.1,
+          2236.4,
+          2250.0,
+          2331.1,
+          2331.1,
+          2331.1,
+          2331.1,
+          2331.1,
+          2331.1,
+          2331.1
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-dl060/modelb-dl060_cmp_conditioned_p1.su",
+      "output": "work/modelb-dl060/modelb-dl060_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9259,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.7,
+        2.0,
+        2.3
+       ],
+       "injected_hz": 9.48,
+       "period_source": "R1",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1500.0,
+        2331.1
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 3,
+      "run_id": "1a1d74a00a70",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 26,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-dl060/modelb-dl060_cmp_conditioned_p2.su",
+      "output": "work/modelb-dl060/modelb-dl060_cmp_conditioned_p3.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.9693,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.8828,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.9929,
+       "materiality_rms_s": 0.00771,
+       "static_rms_s": 0.002,
+       "quarter_period_s": 0.0264,
+       "period_source": "R1",
+       "max_shift_samples": 26,
+       "solution": "results/modelb-dl060_residual_statics_p3.json",
+       "verdict": "FAIL",
+       "reason": "the statics are immaterial: rms 2.0 ms would cost the stack only 1% of its amplitude (threshold 10%, i.e. rms > 7.7 ms); statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.97; receiver reliability 0.88; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.741,
+   "reference_quality": 0.649,
+   "usable": false,
+   "class": "A"
+  },
+  "band 1.0": {
+   "dataset": "modelb-bn100",
+   "verdict": {
+    "released": true,
+    "reliability": "OK",
+    "quality_reasons": [],
+    "provenance_reasons": [],
+    "time_datum": "WITHIN_RESOLUTION",
+    "lag_ms": -2.0,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "234097d27d8b",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1500.0,
+          1500.0,
+          1500.0,
+          1500.0,
+          1528.6,
+          1564.3,
+          1600.0,
+          1635.7,
+          1671.4,
+          1708.4,
+          1751.7,
+          1798.7,
+          1849.9,
+          1894.8,
+          1937.4,
+          2003.6,
+          2092.9,
+          2182.1,
+          2250.0,
+          2250.0,
+          2255.7,
+          2255.7,
+          2255.7,
+          2255.7,
+          2255.7,
+          2255.7,
+          2255.7
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-bn100/modelb-bn100_cmp_sorted.su",
+      "output": "work/modelb-bn100/modelb-bn100_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9173,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.7,
+        2.0,
+        2.3
+       ],
+       "injected_hz": 9.23,
+       "period_source": "R1",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1500.0,
+        2255.7
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "a4876be760d2",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 27,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-bn100/modelb-bn100_cmp_conditioned_p1.su",
+      "output": "work/modelb-bn100/modelb-bn100_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.9114,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.7867,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.9921,
+       "materiality_rms_s": 0.00791,
+       "static_rms_s": 0.00217,
+       "quarter_period_s": 0.0271,
+       "period_source": "R1",
+       "max_shift_samples": 27,
+       "solution": "results/modelb-bn100_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "the statics are immaterial: rms 2.2 ms would cost the stack only 1% of its amplitude (threshold 10%, i.e. rms > 7.9 ms); statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.91; receiver reliability 0.79; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.709,
+   "reference_quality": 0.693,
+   "usable": true,
+   "class": "A"
+  },
+  "band 1.6": {
+   "dataset": "modelb-bn160",
+   "verdict": {
+    "released": true,
+    "reliability": "OK",
+    "quality_reasons": [],
+    "provenance_reasons": [],
+    "time_datum": "WITHIN_RESOLUTION",
+    "lag_ms": -2.0,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "6168a685665b",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1500.0,
+          1500.0,
+          1500.0,
+          1500.0,
+          1528.6,
+          1564.3,
+          1600.0,
+          1635.7,
+          1671.4,
+          1704.6,
+          1742.1,
+          1786.8,
+          1839.7,
+          1900.0,
+          1954.8,
+          2020.0,
+          2102.1,
+          2183.9,
+          2250.0,
+          2250.0,
+          2311.2,
+          2311.2,
+          2312.0,
+          2312.0,
+          2312.0,
+          2312.0,
+          2312.0
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-bn160/modelb-bn160_cmp_sorted.su",
+      "output": "work/modelb-bn160/modelb-bn160_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9138,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.7,
+        2.0,
+        2.3
+       ],
+       "injected_hz": 9.23,
+       "period_source": "R1",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1500.0,
+        2312.0
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "251df71cee17",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 27,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-bn160/modelb-bn160_cmp_conditioned_p1.su",
+      "output": "work/modelb-bn160/modelb-bn160_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.9379,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.8541,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.9879,
+       "materiality_rms_s": 0.00791,
+       "static_rms_s": 0.00269,
+       "quarter_period_s": 0.0271,
+       "period_source": "R1",
+       "max_shift_samples": 27,
+       "solution": "results/modelb-bn160_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "the statics are immaterial: rms 2.7 ms would cost the stack only 1% of its amplitude (threshold 10%, i.e. rms > 7.9 ms); statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.94; receiver reliability 0.85; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.683,
+   "reference_quality": 0.67,
+   "usable": true,
+   "class": "A"
+  },
+  "band 2.0": {
+   "dataset": "modelb-bn200",
+   "verdict": {
+    "released": true,
+    "reliability": "WARN",
+    "quality_reasons": [
+     "N2 half-stack ceiling 0.937 < 0.95"
+    ],
+    "provenance_reasons": [],
+    "time_datum": "WITHIN_RESOLUTION",
+    "lag_ms": -2.0,
+    "material": true,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "8563ce13db85",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1500.0,
+          1500.0,
+          1500.0,
+          1500.0,
+          1528.6,
+          1564.3,
+          1600.0,
+          1635.7,
+          1671.4,
+          1707.4,
+          1749.8,
+          1795.4,
+          1847.2,
+          1900.0,
+          1956.9,
+          2020.0,
+          2102.1,
+          2183.9,
+          2250.0,
+          2250.0,
+          2300.0,
+          2300.0,
+          2300.0,
+          2300.0,
+          2300.0,
+          2300.0,
+          2300.0
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-bn200/modelb-bn200_cmp_sorted.su",
+      "output": "work/modelb-bn200/modelb-bn200_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9142,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.7,
+        2.0,
+        2.3
+       ],
+       "injected_hz": 9.23,
+       "period_source": "R1",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1500.0,
+        2300.0
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "792652a9dfc0",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 27,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-bn200/modelb-bn200_cmp_conditioned_p1.su",
+      "output": "work/modelb-bn200/modelb-bn200_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.9096,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.8172,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.9881,
+       "materiality_rms_s": 0.00791,
+       "static_rms_s": 0.00267,
+       "quarter_period_s": 0.0271,
+       "period_source": "R1",
+       "max_shift_samples": 27,
+       "solution": "results/modelb-bn200_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "the statics are immaterial: rms 2.7 ms would cost the stack only 1% of its amplitude (threshold 10%, i.e. rms > 7.9 ms); statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.91; receiver reliability 0.82; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.639,
+   "reference_quality": 0.652,
+   "usable": false,
+   "class": "Bn"
+  },
+  "white 1.0": {
+   "dataset": "modelb-wn100",
+   "verdict": {
+    "released": true,
+    "reliability": "CAUTION",
+    "quality_reasons": [],
+    "provenance_reasons": [
+     "feasibility not established before binning (INCONCLUSIVE)"
+    ],
+    "time_datum": null,
+    "lag_ms": null,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "aefd1e649f07",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1500.0,
+          1500.0,
+          1500.0,
+          1500.0,
+          1528.6,
+          1564.3,
+          1600.0,
+          1635.7,
+          1671.4,
+          1709.5,
+          1757.0,
+          1804.3,
+          1853.3,
+          1904.8,
+          1950.8,
+          2004.3,
+          2064.6,
+          2136.1,
+          2214.7,
+          2272.1,
+          2327.2,
+          2327.2,
+          2327.2,
+          2327.2,
+          2327.2,
+          2327.2,
+          2327.2
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-wn100/modelb-wn100_cmp_sorted.su",
+      "output": "work/modelb-wn100/modelb-wn100_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9256,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.706,
+        2.004,
+        2.302
+       ],
+       "injected_hz": 8.76,
+       "period_source": "G1_RICKER_EQUIVALENT_FROM_DATA",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1500.0,
+        2327.2
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "aa97dc64f043",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 25,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-wn100/modelb-wn100_cmp_conditioned_p1.su",
+      "output": "work/modelb-wn100/modelb-wn100_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.0,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.0,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 1.0,
+       "materiality_rms_s": 0.00719,
+       "static_rms_s": 0.0,
+       "quarter_period_s": 0.0246,
+       "period_source": "G1_RICKER_EQUIVALENT_FROM_DATA",
+       "max_shift_samples": 25,
+       "solution": "results/modelb-wn100_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "suresstat found no residual statics (every source and receiver static is zero); statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.00; receiver reliability 0.00; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.715,
+   "reference_quality": 0.689,
+   "usable": true,
+   "class": "A"
+  },
+  "statics 16": {
+   "dataset": "modelb-st16",
+   "verdict": {
+    "released": true,
+    "reliability": "CAUTION",
+    "quality_reasons": [],
+    "provenance_reasons": [
+     "feasibility not established before binning (INCONCLUSIVE)"
+    ],
+    "time_datum": null,
+    "lag_ms": null,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "bf7e09bdd63a",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1400.0,
+          1410.7,
+          1428.6,
+          1446.4,
+          1478.6,
+          1522.8,
+          1551.9,
+          1603.6,
+          1657.1,
+          1702.7,
+          1733.1,
+          1793.3,
+          1850.7,
+          1897.4,
+          1944.2,
+          2011.4,
+          2062.1,
+          2111.7,
+          2169.4,
+          2222.3,
+          2250.0,
+          2250.0,
+          2250.0,
+          2250.0,
+          2250.0,
+          2250.0,
+          2250.0
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-st16/modelb-st16_cmp_sorted.su",
+      "output": "work/modelb-st16/modelb-st16_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.9006,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.706,
+        2.004,
+        2.302
+       ],
+       "injected_hz": 8.88,
+       "period_source": "G1_RICKER_EQUIVALENT_FROM_DATA",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1400.0,
+        2250.0
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "21ada8dcd2aa",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 24,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-st16/modelb-st16_cmp_conditioned_p1.su",
+      "output": "work/modelb-st16/modelb-st16_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.98,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.8629,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.8669,
+       "materiality_rms_s": 0.00712,
+       "static_rms_s": 0.00829,
+       "quarter_period_s": 0.0244,
+       "period_source": "G1_RICKER_EQUIVALENT_FROM_DATA",
+       "max_shift_samples": 24,
+       "solution": "results/modelb-st16_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.98; receiver reliability 0.86; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.684,
+   "reference_quality": 0.651,
+   "usable": false,
+   "class": "A"
+  },
+  "statics 12 + band 1.0": {
+   "dataset": "modelb-st12bn",
+   "verdict": {
+    "released": true,
+    "reliability": "CAUTION",
+    "quality_reasons": [],
+    "provenance_reasons": [
+     "feasibility not established before binning (INCONCLUSIVE)"
+    ],
+    "time_datum": null,
+    "lag_ms": null,
+    "material": false,
+    "conditioning": [
+     {
+      "pass": 1,
+      "run_id": "0643108d6eb6",
+      "operations": [
+       {
+        "op": "dmo"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "validated model, smute 1.5"
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "offset",
+         "cdp"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sudmofk",
+        "args": {
+         "cdpmin": 545,
+         "cdpmax": 1140,
+         "dxcdp": 10.0,
+         "noffmix": 4,
+         "tdmo": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+         ],
+         "vdmo": [
+          1454.3,
+          1458.4,
+          1465.1,
+          1472.7,
+          1506.2,
+          1532.3,
+          1576.9,
+          1622.9,
+          1666.6,
+          1709.0,
+          1749.8,
+          1787.8,
+          1834.9,
+          1894.5,
+          1954.6,
+          2020.6,
+          2112.9,
+          2205.2,
+          2250.0,
+          2250.0,
+          2286.8,
+          2286.8,
+          2286.8,
+          2286.8,
+          2286.8,
+          2286.8,
+          2286.8
+         ]
+        }
+       },
+       {
+        "operation": "dmo",
+        "program": "susort",
+        "args": [
+         "cdp",
+         "offset"
+        ]
+       },
+       {
+        "operation": "dmo",
+        "program": "sunmo",
+        "args": "invert=1, same model"
+       }
+      ],
+      "input": "work/modelb-st12bn/modelb-st12bn_cmp_sorted.su",
+      "output": "work/modelb-st12bn/modelb-st12bn_cmp_conditioned_p1.su",
+      "qc": {
+       "gate": "flat-event preservation through NMO-DMO-inverse NMO (v0.26 D1)",
+       "preservation": 0.917,
+       "preservation_min": 0.9,
+       "trace_order_kept": true,
+       "injected_t0_s": [
+        1.706,
+        2.004,
+        2.302
+       ],
+       "injected_hz": 8.89,
+       "period_source": "G1_RICKER_EQUIVALENT_FROM_DATA",
+       "sudmofk": {
+        "cdpmin": 545,
+        "cdpmax": 1140,
+        "dxcdp": 10.0,
+        "noffmix": 4
+       },
+       "vdmo_range_m_s": [
+        1454.3,
+        2286.8
+       ],
+       "shot_spacing_m": 40.0,
+       "cdp_step": 1.0,
+       "verdict": "PASS"
+      },
+      "accepted": true
+     },
+     {
+      "pass": 2,
+      "run_id": "14fe6adc879b",
+      "operations": [
+       {
+        "op": "residual_statics"
+       }
+      ],
+      "chain": [
+       {
+        "operation": "residual_statics",
+        "program": "suresstat",
+        "args": {
+         "ntraces": 12096,
+         "ntpick": 25,
+         "niter": 5,
+         "nshot": 126,
+         "nr": 346,
+         "nc": 596,
+         "sfold": 96,
+         "rfold": 48,
+         "cfold": 24,
+         "mode": 0,
+         "sub": 0
+        },
+        "applied_in_process": true
+       }
+      ],
+      "input": "work/modelb-st12bn/modelb-st12bn_cmp_conditioned_p1.su",
+      "output": "work/modelb-st12bn/modelb-st12bn_cmp_conditioned_p2.su",
+      "qc": {
+       "gate": "split-half reliability + materiality (v0.21 RS2)",
+       "reliability": {
+        "source": {
+         "reliability": 0.9806,
+         "compared": 126
+        },
+        "receiver": {
+         "reliability": 0.8413,
+         "compared": 329
+        }
+       },
+       "reliability_min": 0.9,
+       "split": "random CMP halves, seed 0",
+       "stack_amplitude_factor": 0.9255,
+       "materiality_rms_s": 0.00716,
+       "static_rms_s": 0.00614,
+       "quarter_period_s": 0.0245,
+       "period_source": "G1_RICKER_EQUIVALENT_FROM_DATA",
+       "max_shift_samples": 25,
+       "solution": "results/modelb-st12bn_residual_statics_p2.json",
+       "verdict": "FAIL",
+       "reason": "the statics are immaterial: rms 6.1 ms would cost the stack only 7% of its amplitude (threshold 10%, i.e. rms > 7.2 ms); statics from the two random CMP halves do not establish a repeatable solution (source reliability 0.98; receiver reliability 0.84; needed >= 0.9); the product is kept for audit and not used"
+      },
+      "accepted": false
+     }
+    ]
+   },
+   "quality": 0.684,
+   "reference_quality": 0.655,
+   "usable": false,
+   "class": "A"
+  }
+ },
+ "good_threshold": 0.664
+}

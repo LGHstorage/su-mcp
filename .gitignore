@@ -10,6 +10,8 @@ logs/
 state/
 test_dataset/*
 !test_dataset/Marm2_known_truth/
+!test_dataset/ModelB/
+test_dataset/ModelB/**/*.sgy
 results/*.su
 results/*.json
 results/*/stacks/

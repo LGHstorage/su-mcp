@@ -10,6 +10,7 @@ Paths are relative to the repository root. All scripts refuse to overwrite exist
 | The code behaves as described | `python3 -m unittest discover -s tests -t .` (551 tests) |
 | Each rule set had a criteria document before its code and a result document after | `results/v0150` … `results/v0330`: `CRITERIA.md`, `RESULT.md`, evaluation JSON |
 | The invalidation rule | `sumcp/evidence.py` (`invalidate_downstream`, `superseded`), `tests/test_v0332_invalidation.py` |
+| The final rule set on a second geological model, with criteria written before the model existed | `results/modelb/` (`CRITERIA.md`, `RESULT.md`, `eval_modelb.json`) |
 | Agent experiment 1: frozen criteria, run log with the two harness corrections, scores | `results/baseline01/` (`CRITERIA.md`, `FREEZE.json`, `LOG.md`, `RESULT.md`, `scores.json`, `f3.json`) |
 | Agent experiment 2: frozen criteria, interim scores, the stop decision | `results/baseline02/` (`CRITERIA.md`, `FREEZE.json`, `LOG.md`, `scores_stage1.json`) |
 
@@ -40,6 +41,20 @@ The modelling code is `dev/marm2_oracle/acoustic_fd2d_v2.c` (shot records, `gene
 `generate_v2.py` copies trace headers from the first version of the line, which is not published; the modelling
 code is given so that the method can be read, and the line itself is taken from the data archive.
 
+### Second synthetic line
+
+The same grid, acquisition and modelling as the reference line, over a different geological model (anticline,
+unconformity, normal fault). The model is built by `dev/modelb/make_model.py` and is in the repository
+(`test_dataset/ModelB/truth/`), as is the zero-offset reference section (`results/modelb/er_reference_modelb.npz`).
+
+| File | Place in the project | SHA-256 |
+|---|---|---|
+| `modelb_clean_2p6s.sgy` (66 MB) | `test_dataset/ModelB/` | `9ebc193c6bfb4072319cab3843562b5393f4765673c41996a047a588595429c7` |
+
+The shot records are made by `dev/modelb/generate_b.py` (it copies trace headers from the reference line) and the
+reference section by `dev/modelb/run_er_b.py`, with the modelling code of `dev/marm2_oracle/`. The line is also in
+the data archive.
+
 ### Field lines
 
 | Line | Source | File used | SHA-256 |
@@ -58,6 +73,9 @@ python3 dev/marm2_ladder/make_heldout2.py      # ... to make_heldout14.py
 ```
 
 The ladder made for a rule set is named in the criteria document of that rule set.
+
+The degraded copies of the second line are made by `python3 dev/modelb/make_ladder_b.py` (seeds 151, 152, 153)
+-> `test_dataset/ModelB/ladder/`.
 
 ## 4. Processing and evaluation
 
@@ -79,11 +97,15 @@ evaluation JSON and the recorded gate outcomes beside each `RESULT.md`. The repo
 (0.33.3); the rule that every stack a new rule was not meant to touch stays byte-identical is checked in
 the result documents.
 
+The second line is processed with the stack part of the fixed protocol in `results/modelb/CRITERIA.md`, and
+`python3 dev/modelb/evaluate_b.py` writes `results/modelb/eval_modelb.json`.
+
 ## 5. Figures
 
 ```bash
 python3 dev/paper/figures_paper.py            # all processing figures -> figures/
 python3 dev/paper/figures_paper.py chain      # one figure: chain, velocity, timezero, noise, statics, migration, viking, poland
+python3 dev/modelb/fig_modelb_paper.py        # Fig. 7, second geological model
 ```
 
 The script reads the reference line, the ladder levels and the released products under `results/`. The products

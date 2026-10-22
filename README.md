@@ -21,8 +21,10 @@ Version 0.33.3. Licence: AGPL-3.0 (see `LICENSE`).
 | `dev/marm2_oracle/` | Finite-difference modelling of the reference line and its zero-offset reference section |
 | `dev/marm2_ladder/` | Generators of the degradation ladders (with their seeds) and the evaluation scripts |
 | `dev/baseline01/`, `dev/baseline02/` | Case generators, scoring and freeze scripts of the agent experiments |
+| `dev/modelb/` | Model, shot records, reference section, degraded copies, evaluation and figure of the second geological model |
 | `dev/paper/` | The script that draws the processing figures of the paper |
 | `results/v0150` … `results/v0330` | For each rule set: the criteria document written before the code, and the result document |
+| `results/modelb/` | Criteria and result documents of the test of the final rule set on the second geological model |
 | `results/baseline01`, `results/baseline02` | Frozen criteria, run log, scores and freeze manifests of the agent experiments |
 | `docs/` | User guide and reproduction guide |
 
@@ -94,7 +96,7 @@ See `docs/REPRODUCE.md`: reference line, degradation ladders, evaluation, figure
 
 The processing ends at post-stack time migration and a depth conversion. Prestack migration, multiple
 attenuation, refraction statics and crooked-line binning are not implemented. The acceptance criteria were
-developed and tested on one synthetic geological model and two public field lines. The domain tools call Seismic
+developed on one synthetic geological model, tested unchanged on a second one, and applied to two public field lines. The domain tools call Seismic
 Unix programs directly; no other processing package is supported.
 
 ## Citation
