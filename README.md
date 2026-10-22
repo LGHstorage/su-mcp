@@ -102,3 +102,6 @@ Unix programs directly; no other processing package is supported.
 ## Citation
 
 [Paper reference to add on publication.]
+
+Data archive: Lee, G., 2026. SU-MCP validation data and agent experiment records, version 1.0. Zenodo.
+https://doi.org/10.5281/zenodo.23549047

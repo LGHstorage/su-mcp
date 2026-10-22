@@ -29,7 +29,7 @@ https://wiki.seg.org/wiki/AGL_Elastic_Marmousi): 126 shots, 96 channels, 2 ms, 2
 |---|---|---|
 | `marm2_known_truth_v2_2p6s.sgy` (66 MB) | `test_dataset/Marm2_v2/` | `159c1363773cf10d1aaea51cc43de3060a9c00c97782fe8919c72317ddb71372` |
 
-The line is available from the data archive of the paper: [data archive DOI to add].
+The line is available from the data archive of the paper: https://doi.org/10.5281/zenodo.23549047.
 
 The velocity model used for modelling and for the true rms velocity is in the repository
 (`test_dataset/Marm2_known_truth/truth/`), as is the zero-offset reference section
